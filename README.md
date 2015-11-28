@@ -18,12 +18,12 @@ If there're multiple instances of the <tag> inside the HTML, only the first inst
 
 ##RETURNING VALUES##
 *$inner == 1*
-1. **$block** - contains contents of the block identified by $opening_tag_html
-2. **$html_processed** - contains $html with the body of the block removed
+- **$block** - contains contents of the block identified by $opening_tag_html
+- **$html_processed** - contains $html with the body of the block removed
 
 *$inner == 0*
-1. **$block** - contains contents of the block identified by $opening_tag_html, along with the opening and closing tags
-2. **$html_processed** - contains $html with the body, and opening/closing tags of the block removed
+- **$block** - contains contents of the block identified by $opening_tag_html, along with the opening and closing tags
+- **$html_processed** - contains $html with the body, and opening/closing tags of the block removed
 
 
 ##EXAMPLE A##
