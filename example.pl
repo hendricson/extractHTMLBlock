@@ -19,7 +19,7 @@ $html0 = '
 </tr>
 </table>
 ';
-my ($html, $source) = extractHtmlBlock ($html0, '<span class="one1">', 1, 0);
+my ($html, $source) = extractHtmlBlock ($html0, '<span class="one1">', 0, 0);
 
 print STDOUT "html0=[", $html0,"]\n";
 print STDOUT "html=[", $html,"]\n";

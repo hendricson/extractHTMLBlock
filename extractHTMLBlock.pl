@@ -22,10 +22,8 @@ sub extractHtmlBlock {
 
    $source = $_[0]; #source string ()
    $block = $_[1]; #the opening tag of a block
-   $inner = $_[2]; #if 1 - just grab what's inside the block;
-                   #the block and its contents disappear from the source string.
-                   #If set to 0, the block is left out empty
-   $debug = $_[3];
+   $inner = $_[2]; #flag
+   $debug = $_[3]; #flag
 
    $debugMsg = '<h3>ExtractHtmlBlock: '.encode_entities($block)."</h3>\n";
    $startpos = index($source, $block);
