@@ -1,7 +1,9 @@
 #Extract HTML Block
-I quick handy Perl subroutine I wrote a while ago to extract contents of HTML blocks identified by opening tags: 
+I quick handy Perl subroutine I wrote a while ago to extract contents of HTML blocks identified by opening tags:
 
-*<tag>BLOCK BODY or BLOCK CONTENTS</tag>*
+```
+<tag>BLOCK BODY or BLOCK CONTENTS</tag>
+```
 
 If there're multiple instances of the <tag> inside the HTML, only the first instance will be treated.
 
@@ -11,8 +13,8 @@ If there're multiple instances of the <tag> inside the HTML, only the first inst
 ##ARGUMENTS##
 **$html** - contains original HTML to be processed
 **$opening_tag_html** - contains opening tag of a block inside $html
-**$inner** - a flag of 1 or 0. 
-**$debug** - a flag of 1 or 0. 
+**$inner** - a flag of 1 or 0.
+**$debug** - a flag of 1 or 0.
 
 ##RETURNING VALUES##
 *$inner == 1*
